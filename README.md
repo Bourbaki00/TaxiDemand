@@ -71,12 +71,15 @@ ARIMA models always asume that the data is stationary.
 
 #### what is Stationarity ?
 this simply means that the model assumes that the data was a constant mean with a constant standard deviation throughout the data and has no seasonality but as we just saw with the figure aur data does has some kind of seasonality so the data is not very stationary the exact number comes out to be 12.3453e-13. which is acceptable by the standards so we went ahead and gave it a short. <br><br>
-<img src="./assets/stationary.png" />
+<img src="./assets/stationarity.png" />
 <br><br>
 ### Spatial Temporal Graph Neural Networks 
 
 The data we have is mainly time varying as supposed to being spatialy varying and such information requires a graph and Neural Network which are developed to deal with time varying features of a graph can be considered as Spatio-Temporal graph neural nets.
 <br>
+
+The model was trained on ADAM optimizer and the loss was calculated with MSEloss for 200 epochs.
+
 
 
 ### Results 
