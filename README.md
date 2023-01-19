@@ -1,12 +1,12 @@
 # Taxi Demand Prediction
 
-<p align="center">
-  <img src="./assets/taxi_map.jpg", width=30% />
-</p>
-
 Forecasting is ubiquitous. In addition to strategic forecasts, such as those predicting revenue, production, and spending, organizations across industries need accurate short-term, tactical forecasts, such as the amount of goods to be ordered and number of employees needed, to keep pace with their growth
 <br>
 With this we expect to formulate an efficient method to predict the demand of taxis over time 
+<br><br>
+| head                              | pickup freq heatmap
+| --------------------------------- | -------------------------------------- |
+|<img src="./assets/taxi_map.jpg" /> | ![Alt Text](./assets/pickup_heatmap.gif)|
 
 ## Now what makes forcasting a challenge ? 
 There are a lot of constraints to forcasting in this case that would be diverse behavior and interests, physical constraints, and unpredictability which might also include geographic distance and road throughput move forecasting from the temporal to spatio-temporal domains.
@@ -48,20 +48,38 @@ some stuff
 ### ARIMA
 
 One of the statistical model used here is ARIMA which again stands for autoregressive integrated moving average which is basically linear regression combined with moving average to make the model more robust.
+<br>
+The degree of which can be obtained by looking at autocorrelation and partial autocorrelation plots - <br><br>
+| Auto Correlation | Partial Auto Correlation | 
+| ---------------- | ------------------------ |
+|<img src="./assets/auto_correlation.png" />|<img src="./assets/partial_autocorrelation.png" />|
+<br>
 
 - ARIMA makes use of lagged moving averages to smooth time series data.
 - Autoregressive models implicitly assume that the future will resemble the past.
+<br>
+Here the results of AR and MA models are - 
+<br><br>
+| Auto Regression | Moving Average | Combined ARMA |
+| --------------- | -------------- | ------------- |
+|<img src="./assets/AR_model_prediction.png" />|<img src="./assets/MA_on_residual.png" />|<img src="./assets/ARMA_model.png" />|
+
+
 <br>
 But ofcourse this has to come with its own short comings which include data assumptions which is 
 ARIMA models always asume that the data is stationary.
 
 #### what is Stationarity ?
-this simply means that the model assumes that the data was a constant mean with a constant standard deviation throughout the data and has no seasonality but as we just saw with the figure aur data does has some kind of seasonality so the data is not very stationary the exact number comes out to be 12.3453e-13. which is acceptable by the standards so we went ahead and gave it a short and here is what it results in. 
-
+this simply means that the model assumes that the data was a constant mean with a constant standard deviation throughout the data and has no seasonality but as we just saw with the figure aur data does has some kind of seasonality so the data is not very stationary the exact number comes out to be 12.3453e-13. which is acceptable by the standards so we went ahead and gave it a short. <br><br>
+<img src="./assets/stationarity.png" />
+<br><br>
 ### Spatial Temporal Graph Neural Networks 
 
 The data we have is mainly time varying as supposed to being spatialy varying and such information requires a graph and Neural Network which are developed to deal with time varying features of a graph can be considered as Spatio-Temporal graph neural nets.
 <br>
+
+The model was trained on ADAM optimizer and the loss was calculated with MSEloss for 200 epochs.
+
 
 
 ### Results 
