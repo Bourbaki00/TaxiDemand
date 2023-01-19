@@ -32,7 +32,7 @@ The data was provided but I find it very underwhelming for this kind of task wit
 <p align="center">
   <img src="./assets/initial_data_plot.png" />
 </p>
-And with a lot of external factors affecting it so the data used was from - https://www.nyc.gov/site/tlc/about/data.page which is the official site of NYC gov. <br>
+And with a lot of external factors affecting it so the data used was from - (https://www.nyc.gov/site/tlc/about/data.page) which is the official site of NYC gov. <br>
 With this weather data was also used which was again downloaded from the official gov website.
 <br><br>
 Computing the loss throughout the project was done by RMSE or MSE which is also used by a lot of time series models. 
@@ -56,7 +56,7 @@ The degree of which can be obtained by looking at autocorrelation and partial au
 | ---------------- | ------------------------ |
 |<img src="./assets/auto_correlation.png" />|<img src="./assets/partial_autocorrelation.png" />|
 <br>
-- ARIMA makes use of lagged moving averages to smooth time series data.
+- ARIMA makes use of lagged moving averages to smooth time series data.<br>
 - Autoregressive models implicitly assume that the future will resemble the past.
 <br>
 Here the results of AR and MA models are because as we say <i> Keep It Simple, Stupid </i> - 
