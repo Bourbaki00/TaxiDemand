@@ -14,7 +14,7 @@ There are a lot of constraints to forcasting in this case that would be diverse 
 But looking at a sample data which is yellow taxi trip data in NYC over 6 months we can clearly notice some seasonality (weekly and monthly) there are a few peaks because of the sheer number of major holidays scattered throughout the year.
 <br>
 <p align="center">
-  <img src="./assets/final_data_daily_plot.png", width=100% />
+  <img src="./assets/final_data_daily_plot.png"/>
 </p>
 <br>
 There is a perticular dip in the demand towards the starting this is perticularly intresting because on the day this happened snowfall was at its peak so this clearly stats that we have to take weather data in account.
@@ -62,7 +62,7 @@ Here the results of AR and MA models are -
 <br><br>
 | Auto Regression | Moving Average | Combined ARMA |
 | --------------- | -------------- | ------------- |
-|<img src="./assets/AR_model_prediction.png" />|<img src="./assets/MA_on_residual.png" />|<img src="./assets/ARMA_model.png" />|
+| <img src="./assets/AR_model_prediction.png" /> | <img src="./assets/MA_on_residual.png" /> | <img src="./assets/ARMA_model.png" /> |
 
 
 <br>
