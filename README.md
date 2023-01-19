@@ -86,3 +86,6 @@ Here's the result for the model - <br>
 
 ### Final Conclutions 
 Finally, the model needs a lot of improvement and again concatenating the spatial-temporal data with weather data can be very 
+
+![meta](./assets/weather_data_daily.png)
+
