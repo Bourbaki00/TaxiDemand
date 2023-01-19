@@ -5,7 +5,7 @@ Forecasting is ubiquitous. In addition to strategic forecasts, such as those pre
 With this, we expect to formulate an efficient method to predict the demand for taxis over time 
 <br><br>
 <p align="center">
-<img src="./assets/pickup_heatmap.gif",width="80%" />
+<img src="https://github.com/Bourbaki00/TaxiDemand/blob/main/assets/pickup_heatmap.gif",width="80%" />
 </p>
 
 ## Now what makes forecasting a challenge? 
